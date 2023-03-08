@@ -15,46 +15,144 @@
                 <a href="#experience" class="menu-item">Experience</a>
 
                 </div>
-                <div class="background-pattern"></div>
+                <a href="#menu" class="background-pattern"></a>
         </div>
+
+<!-- !about me! -->
         <div id="aboutme" class="page">
                 
                 <div class="menu-items">
-                <a href="#" class="menu-item">Bio</a>
-                <a href="#" class="menu-item">Links</a>
+                <button id="bio-button"  class="menu-item">Bio</button>
+                
+                <button id="links-button"  class="menu-item">Links</button>
 
                 </div>
-                <div class="background-pattern"></div>
-               
-        </div>
 
+        <!-- !content! -->
+                <div class="content-container">
+
+                        <div class="content" id="bio"> 
+                                Hello my name is mr fish man <br><br>
+                                I'm a good boy on the track no cussing <br><br>
+                                I am king nothing I am nothing <br><br>
+                                Something something something... 
+                        </div>
+
+                        <div class="content" id="links"> 
+                                Link to peas <br><br>
+                                Link to peas <br><br>
+                                Link to peas <br><br>
+                        </div>
+
+                </div>
+
+                <a href="#aboutme" class="background-pattern"></a>
+
+        </div>
+<!-- !projects! -->
         <div id="projects" class="page">
                 
                 <div class="menu-items">
-                <a href="#" class="menu-item">CUcourses</a>
-                <a href="#" class="menu-item">Sound Wave Visualizer</a>
-                <a href="#" class="menu-item">Pathways</a>
+                <button id="project1-button" class="menu-item">CUcourses</button>
+                <button id="project2-button" class="menu-item">Sound Waves</button>
+                <button id="project3-button" class="menu-item">Pathways</button>
 
                 </div>
-                <div class="background-pattern"></div>
-               
+                
+
+        <!-- !content! -->
+                <div class="content-container">
+
+                        <div class="content" id="project1"> 
+                                CU <br><br>
+                                Course <br><br>
+                                Project <br><br>
+                                Something something something... 
+                        </div>
+
+                        <div class="content" id="project2"> 
+                                Sound Waves <br><br>
+                                winning! <br><br>
+                                Project <br><br>
+                                Something something something... 
+                        </div>
+
+                        <div class="content" id="project3"> 
+                                Pathways <br><br>
+                                2.5 Dimensions!?!?! <br><br>
+                                Independent Project <br><br>
+                                Something something something... 
+                        </div>
+
+                </div>
+
+                <a href="#projects" class="background-pattern"></a>
         </div>
 
+<!-- !experience! -->
         <div id="experience" class="page">
                 <div class="menu-items">
 
-                <a href="#" class="menu-item">Resume</a>
-                <a href="#" class="menu-item">Skills</a>
+                <button id="resume-button" class="menu-item">Resume</button>
+                <button id="skills-button" class="menu-item">Skills</button>
 
                 </div>
-                <div class="background-pattern"></div>
-               
+                <a href="#experience" class="background-pattern"></a>
+
+                <!-- !content! -->
+
+                <div class="content-container">
+
+                        <div class="content" id="resume"> 
+                                IT Department <br><br>
+                                Tennis Balls <br><br>
+                                System Admin <br><br>
+                                Something something something... 
+                        </div>
+
+                        <div class="content" id="skills"> 
+                                Doing Stuff <br><br>
+                                Being Cool <br><br>
+                                Eatin Snacks <br><br>
+                                Other Stuff ... 
+                        </div>
+
+
+                </div>
+                
         </div>
 
 
-</div>
 </div>
 
 
 
 </body>
+
+<script>
+
+//page 1 buttons
+var button = document.getElementById("bio-button");
+button.addEventListener("click", selectBio);
+
+var button = document.getElementById("links-button");
+button.addEventListener("click", selectLinks);
+
+// page 2 buttons 
+var button = document.getElementById("project1-button");
+button.addEventListener("click", selectProject1);
+
+var button = document.getElementById("project2-button");
+button.addEventListener("click", selectProject2);
+
+var button = document.getElementById("project3-button");
+button.addEventListener("click", selectProject3);
+
+//page 3 buttons
+var button = document.getElementById("resume-button");
+button.addEventListener("click", selectResume);
+
+var button = document.getElementById("skills-button");
+button.addEventListener("click", selectSkills);
+
+</script>
