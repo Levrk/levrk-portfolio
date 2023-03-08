@@ -8,6 +8,15 @@ html{
     scroll-behavior: smooth;
 }
 
+button{
+background: none;
+border: none;
+}
+
+
+.main{
+}
+
 #scroll-to-top{
     z-index: 3;
     position: fixed;
@@ -49,15 +58,20 @@ animation: moveGradient 10s alternate infinite;
 @keyframes moveGradient {
     0% {
             background-position: 0% 100%;
+            
         }
     100% {
             background-position: 45% 0%;
+        
         }
-  }
+}
 
 .menu-items{
 margin-left: 10vw;
 display: flex;
+align-items: center;
+text-align: center;
+position: relative;
 flex-direction: column;
 z-index: 2;
 }
@@ -65,10 +79,12 @@ z-index: 2;
 .menu-item{
 padding: 5vh;
 color: white;
+opacity: .5;
+text-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 font-size: 4em;
 text-decoration: none;
 font-family:'Franklin Gothic Medium';
-transition: all .5s;
+transition: all .8s;
 }
 
 .menu-items:hover > .menu-item{
@@ -80,4 +96,37 @@ transform: scale(.85);
 .menu-items:hover > .menu-item:hover{
     opacity: 1;
     transform: scale(1.15);
+}
+
+.content-container{
+display: flex;
+justify-content: center;
+align-items:center;
+}
+
+.content{
+text-align: center;
+position: absolute;
+z-index: 3;
+color: white;
+font-size: .8em;
+font-family: 'Franklin Gothic Medium';
+opacity: 0;
+transition: all 1s;
+transform: translateX(100vw);
+}
+
+.content-selected{
+    opacity:1;
+    transform: scale(1.8) translateX(20vw);
+} 
+
+.button-selected{
+    transform: scale(1.65);
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    /* setting scrollbars to hidden */
+    width: 0vh;
 }
