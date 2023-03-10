@@ -1,11 +1,14 @@
 body{
 background-color: black;
 margin: 0;
-overflow-x: hidden;
+position:relative;
+overflow-x:hidden;
 }
 
 html{
     scroll-behavior: smooth;
+    position:relative;
+    overflow-x:hidden;
 }
 
 button{
