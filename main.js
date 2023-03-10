@@ -185,10 +185,10 @@ document.addEventListener('mousemove', function(event) {
 window.onload = function() {
     // Execute your functions here
     onLoad();
-  };
+};
 
 function onLoad() {
     selectBio();
     selectProject1();
-    selectResume();
+    selectSkills();
 }
