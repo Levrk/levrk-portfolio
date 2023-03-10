@@ -189,7 +189,33 @@ transform: translateX(100vw);
 }
 
 
+/* ! projects ! */
 
+.project{
+    padding-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-img{
+    max-width: 20vw;
+}
+
+.project-link{
+    font-size: 1.2em;
+    border-width: 3px;
+    border-style: solid;
+    color: #ffffff;
+    padding: 1vh;
+    border-color: #ffffff;
+    transition: all .6s;
+}
+
+.project-link:hover{
+    border-radius: 50%;
+}
 /* ! experience ! */
 
 #resume{
@@ -223,16 +249,16 @@ transition: all .5s;
 }
 
 .skill.one:hover{
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 .skill.one:hover::before{
     content: "1+ year";
     }
 
 .skill.two:hover{
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 .skill.two:hover::before{
     content: "2+ years";
