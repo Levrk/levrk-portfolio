@@ -222,7 +222,20 @@ transform: translateX(100vw);
 /* ! experience ! */
 
 #resume{
-    height: 50vh;
+    height: 40vh;
+    flex-direction: column;
+}
+
+.resume-caption{
+    color:#ffffff;
+    opacity: 0;
+    padding: 1vh;
+    transition: all .5s;
+}
+
+#resume:hover > .resume-caption{
+    opacity: 1;
+    transform: scale(1.2);
 }
 
 #skills{
