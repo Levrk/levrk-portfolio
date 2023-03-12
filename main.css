@@ -21,8 +21,8 @@ border: none;
 #scroll-to-top{
     z-index: 3;
     position: fixed;
-    top: 5vh;
-    right: 5vw; 
+    top: 1vh;
+    right: 2vw; 
     color: white;
     text-decoration: none;
     font-size: 5em;
