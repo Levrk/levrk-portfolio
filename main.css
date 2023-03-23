@@ -71,7 +71,7 @@ background-image:
 radial-gradient(circle at -100% 0%, #aa0cff, #0000ff, #000000);
 background-size: 120vmin 120vmin;
 position: absolute;
-opacity: .4;
+opacity: .35;
 z-index: 1;
 animation: moveGradient 10s alternate infinite;
 }
@@ -195,12 +195,13 @@ transform: translateX(100vw);
 /* ! projects ! */
 
 .project{
-    padding-right: 5vw;
+    margin-right: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 .project-img{
     max-width: 20vw;
@@ -222,7 +223,7 @@ transform: translateX(100vw);
 /* ! experience ! */
 
 #resume{
-    height: 40vh;
+    height: 45vh;
     flex-direction: column;
 }
 
